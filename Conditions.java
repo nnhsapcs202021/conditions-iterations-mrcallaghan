@@ -230,7 +230,7 @@ public class Conditions
          */
         
         int a = 7;
-        int b = k
+        int b = a++;
         //a++;
         System.out.println("a = " + a + "; b = " + b);  // a = 8; b = 7
         
