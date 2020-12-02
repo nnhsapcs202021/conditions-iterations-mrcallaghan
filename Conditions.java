@@ -201,6 +201,7 @@ public class Conditions
 
     }
     
+    
     public static void extraOperatorsExample()
     {
         /*
@@ -210,6 +211,7 @@ public class Conditions
          *  Perform the specified mathematical operation to the variable and then assign the
          *      resulting value to the same variable.
          */
+        
         int x = 7;
         int y = 7;
         int z = 7;
@@ -226,13 +228,20 @@ public class Conditions
          *  These are equivalent to adding/subtracting 1 to/from the variable.
          *  These return the value before performing the increment/decrement.
          */
+        
         int a = 7;
-        int b = a++;
+        int b = k
+        //a++;
         System.out.println("a = " + a + "; b = " + b);  // a = 8; b = 7
         
-        a--; // decrement works too!
-    
+        a--; // decrement as well!
+        --a; // preincrement operator
+        
+        int c = 7;
+        int d = ++c;
+        System.out.println("c = " + c + "; d = " + d);  // c = 8; d = 8
     }
+
     
     
 }
