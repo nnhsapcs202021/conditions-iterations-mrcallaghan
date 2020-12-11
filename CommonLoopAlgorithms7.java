@@ -151,5 +151,13 @@ public class CommonLoopAlgorithms7
      */
     public static void identifyDigits(int intValue)
     {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Please enter a series of numbers: ");
+        String line = s.nextLine();
+
+        for(int i =1; i< line.length()+1; i++)
+        {
+            System.out.println(line.substring(line.length()-i, line.length()-i+1));
+        }
     }
 }
