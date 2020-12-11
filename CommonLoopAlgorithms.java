@@ -77,21 +77,18 @@ public class CommonLoopAlgorithms
      * @return the number that matched the criteria
      */
     public static int promptUntilMatch()
-    {
-        int n = 0;
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter a positive integer less than 100:");
-        n = s.nextInt();
-        while (n>100 || n<0 )
-        {
-            System.out.println("Enter a positive integer less than 100:");
-            // reupdate variable
-            n = s.nextInt();
+   {
+       Scanner s = new Scanner(System.in); // creates a new Scanner object
+        System.out.print("Enter a number: "); // prompts user to enter number
+        int num = s.nextInt();
+       while (num>100 || num <0) // if number is > 100 or is negative, the loop runs
+       {
+           System.out.print("Enter a new number: "); // prompts user to enter a new number
+           num = s.nextInt();
         }
+        return num; // returns the number that is positive and less than 100
+   }
 
-        return n;
-
-    }
 
     /*
      * Loop Algorithm #5: findMax
