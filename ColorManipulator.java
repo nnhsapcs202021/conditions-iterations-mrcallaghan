@@ -3,8 +3,8 @@ import java.awt.Color;
 /**
  * Class that manipulates the colors in a specified picture
  *
- * @author gcschmit
- * @version 5 June 2017
+ * @author mrcallaghan
+ * @version 6 jan 2021
  */
 public class ColorManipulator
 {
@@ -46,10 +46,12 @@ public class ColorManipulator
             for( int x = 0; x < width; x++ )
             {
                 Pixel pixel = this.picture.getPixel( x, y );
-                pixel.setBlue( 255 );
+                pixel.setBlue( 255 ); // pixels can go from 0 - 255
             }
         }
     }
+    
+    // write maxGreen and maxRed
 
     /**
      * Negates the color of every pixel in the picture
@@ -77,11 +79,16 @@ public class ColorManipulator
             }
         }
     }
+    
+    public void grayScale()
+    {
+    
+    }
 
     public static void main(String args[])
     {
         // the selfie image must be in the Shepard Fairey folder
-        Picture picture= new Picture( "selfiePortrait.jpg" );
+        Picture picture= new Picture( "Schmit.jpg" );
         ColorManipulator manipulator = new ColorManipulator( picture );
         picture.explore();
         manipulator.negate();

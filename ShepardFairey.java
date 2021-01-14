@@ -35,7 +35,7 @@ public class ShepardFairey
     {
         // create a new picture object based on the original selfie
         //  (the selfie image must be in the Shepard Fairey folder)
-        Picture selfie = new Picture( "selfiePortrait.jpg" );
+        Picture selfie = new Picture( "Schmit.jpg" );
 
         // create a ShepardFairey object to transform the selfie picture
         ShepardFairey fairey = new ShepardFairey( selfie );
@@ -58,7 +58,7 @@ public class ShepardFairey
         selfie.write( "MrSchmitPortrait.jpg" );
         
         // repeat the steps for the selfie in landscape orientation
-        selfie = new Picture( "selfieLandscape.jpg" );
+        selfie = new Picture( "Callaghan.jpg" );
         fairey = new ShepardFairey( selfie );
         selfie.explore();
         fairey.transform();
